@@ -1,6 +1,11 @@
 class Api::ContactsController < ApplicationController
   def contact_action
-    @contact = Contact.find_by(first_name: "mat")
+    @contacts = Contact.all
     render "contact.json.jb"
+  end
+
+  def dog_action
+    @dog = Dog.first
+    render "dog.json.jb"
   end
 end

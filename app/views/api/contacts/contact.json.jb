@@ -1,1 +1,6 @@
-{ message: @contact }
+@contacts.map do |contact|
+  {
+    first_name: contact.first_name,
+    id: contact.id,
+  }
+end

@@ -9,5 +9,6 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/contacts" => "contacts#contact_action"
+    get "/dogs" => "contacts#dog_action"
   end
 end
